@@ -29,6 +29,8 @@ library
 
 
 test-suite spec
+  if impl(ghcjs)
+    buildable: False
   type:               exitcode-stdio-1.0
   main-is:            Spec.hs
   hs-source-dirs:     test
